@@ -1,5 +1,19 @@
+import { useMediaQuery } from 'react-responsive';
 import '../App.css'
 const Home = (props) =>{
+
+const isPhoneDevice = useMediaQuery({
+        query: "(min-device-width: 300px)",
+});
+
+const isTabletDevice = useMediaQuery({
+  query: "(min-device-width: 768px)",
+});
+
+const isLaptopDevice = useMediaQuery({
+  query: "(min-device-width: 1024px)",
+});
+
     return(
        <body>
              <div className='box'>
